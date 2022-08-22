@@ -1,14 +1,13 @@
+import Image from 'next/image';
 
-import { IconButton } from "@material-ui/core"
-import MenuIcon from "@material-ui/icons/Menu"
+import Sidebar from '../components/sidebar/Sidebar';
+import Form from '../components/form/Form';
 
 export default function Home() {
   return (
-    <div className="shadow-md h-12 flex items-center px-4 justify-between align-center">
-    <h1 className="text-purple-500 font-base">Hello World!!</h1>
-    <div>
-    <IconButton><MenuIcon /></IconButton>
+    <div className="flex flex-col md:flex-row items-center justify-center h-screen w-full">
+        <Sidebar />
+      <Form />
     </div>
-    </div>
-  )
+  );
 }
