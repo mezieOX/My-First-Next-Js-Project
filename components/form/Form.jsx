@@ -3,9 +3,9 @@ import Button from '../ui/button/Button';
 
 function Form() {
   return (
-    <div className="bg-white flex-[2] flex mt-40 px-8">
+    <div className="bg-white sm:items-center sm:mb-40 flex-[2] sm:flex-[3] flex mt-40 sm:px-8 mx-auto sm:ml-10">
       <div className="flex-grow">
-        <form className="space-y-10">
+        <form className="space-y-10 max-w-[350px] mx-auto">
           <div className="flex flex-col gap-4 w-full">
             <label htmlFor="name" className="uppercase text-gray-700 text-sm">
               CardHolder Name
@@ -28,7 +28,7 @@ function Form() {
               className="outline-none border focus:shadow-xl shadow sm:mr-9 p-2 flex-1 rounded-lg pl-2"
             />
           </div>
-          <div className="flex items-center justify-between w-full space-x-8 overflow-x-scroll">
+          <div className="flex items-center justify-between sm:-ml-5sm:justify-center w-full space-x-8 overflow-x-scroll scrollbar-hide">
             <div className=' '>
             <label  htmlFor="name" className="uppercase text-gray-700 text-sm">exp. date (mm/yy)</label>
             <div className="flex items-center gap-4 mt-3 ">
@@ -50,7 +50,7 @@ function Form() {
               </div>
               </div>
               </div>
-            <div className="flex flex-col gap-4 w-20">
+            <div className="flex flex-col gap-4 w-20 sm:w-40">
               <label htmlFor="name" className="uppercase text-gray-700 text-sm">
                 cvc
               </label>
@@ -58,7 +58,7 @@ function Form() {
                 type="text"
                 id="month"
                 placeholder="e.g. 123"
-                className="outline-none border p-2 rounded-lg pl-2 focus:shadow-xl shadow flex-1"
+                className="outline-none border p-2 rounded-lg pl-2 focus:shadow-xl sm:mr-9 shadow flex-1"
               />
             </div>
           </div>

@@ -4,7 +4,7 @@ import Sidebar from '../components/sidebar/Sidebar';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-screen">
+    <div className="flex flex-col sm:flex-row w-full h-screen">
       <Sidebar />
       <Form />
     </div>
