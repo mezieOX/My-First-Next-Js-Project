@@ -3,7 +3,7 @@ import Button from '../ui/button/Button';
 
 function Form() {
   return (
-    <div className="bg-white sm:items-center mb-40 flex-[2] sm:flex-[3] flex mt-40 sm:px-8 mx-auto sm:ml-10">
+    <div className="bg-white sm:items-center sm:mb-40 flex-[2] sm:flex-[3] flex mt-40 sm:px-8 mx-auto sm:ml-10">
       <div className="flex-grow">
         <form className="space-y-10 max-w-[350px] mx-auto">
           <div className="flex flex-col gap-4 w-full">
@@ -62,7 +62,7 @@ function Form() {
               />
             </div>
           </div>
-          <Button link={""}>confirm</Button>
+          <Button link={""} className="mb-10 sm:mb-0">confirm</Button>
         </form>
       </div>
     </div>
