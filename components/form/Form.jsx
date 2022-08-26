@@ -65,9 +65,6 @@ function Form() {
           <Button link={""}>confirm</Button>
         </form>
       </div>
-      <div className="sm:hidden h-20">
-
-      </div>
     </div>
   );
 }
